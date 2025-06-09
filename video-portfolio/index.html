@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박희훈 - Video Editor & Motion Graphics Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <h2>박희훈</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Video Editor</span> &<br>
+                    <span class="gradient-text">Motion Graphics Designer</span>
+                </h1>
+                <p class="hero-subtitle">
+                    창의적이고 전문적인 영상 작업을 통해<br>
+                    당신의 메시지를 효과적으로 전달합니다
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn--primary">포트폴리오 보기</a>
+                    <a href="#contact" class="btn btn--outline">연락하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">다양한 프로젝트를 통해 쌓은 경험과 노하우를 확인하세요</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Commercial">Commercial</button>
+                <button class="filter-btn" data-filter="Motion Graphics">Motion Graphics</button>
+                <button class="filter-btn" data-filter="Product Demo">Product Demo</button>
+                <button class="filter-btn" data-filter="Music Video">Music Video</button>
+                <button class="filter-btn" data-filter="Infographic">Infographic</button>
+                <button class="filter-btn" data-filter="Social Media">Social Media</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Tools</h2>
+                <p class="section-subtitle">전문적인 도구들을 활용한 고품질 영상 제작</p>
+            </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-description">
+                        4년 경력의 영상편집자로서 After Effects와 Premiere Pro를 주력으로 
+                        다양한 프로젝트를 진행하고 있습니다. 브랜드 홍보 영상부터 모션 그래픽까지, 
+                        창의적이고 전문적인 영상 작업을 통해 클라이언트의 메시지를 효과적으로 전달합니다.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">이름:</span>
+                            <span class="info-value">박희훈</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">위치:</span>
+                            <span class="info-value">Seoul, Korea</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">경력:</span>
+                            <span class="info-value">4 Years</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">이메일:</span>
+                            <span class="info-value">hehe3367@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <span class="avatar-text">박희훈</span>
+                        </div>
+                        <h3>Video Editor</h3>
+                        <p>Motion Graphics Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">프로젝트 문의나 협업 제안을 언제든 환영합니다</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:video@example.com">video@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Seoul, Korea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h4>Follow Me</h4>
+                    <div class="social-grid" id="social-grid">
+                        <!-- Social links will be dynamically generated -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal" id="video-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+                <p id="modal-category"></p>
+            </div>
+            <div class="modal-video">
+                <video id="modal-video-player" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="modal-info">
+                <p id="modal-description"></p>
+                <div class="modal-tools" id="modal-tools"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 박희훈. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Immediate loading screen removal
+        setTimeout(function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.style.opacity = '0';
+                loadingScreen.style.visibility = 'hidden';
+                document.body.style.overflow = 'auto';
+            }
+        }, 1000);
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
